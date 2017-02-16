@@ -77,13 +77,62 @@
 	<section class="things">
 		<h2>At the same time that we are earnest to explore & learn all things</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nostrum porro tempore maxime harum inventore. Quaerat expedita sint ullam, accusantium.</p>
-		<div class="things-img"></div><img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
+		<div class="things-img"><img src="/img/earnest.png" alt=""></div>
+		<div class="things-img"><img src="/img/explore.png" alt=""></div>
+		<div class="things-img"><img src="/img/learn.png" alt=""></div>
+
+	</section>
+
+	<section class="reviews">
+		
+		<ul class="reviews-slides">
+			<li>
+				<div class="review-left">
+					<img src="img/custumer-1.jpg" alt="custumer photo">
+				</div>
+				<div class="review-right">
+					<h3>Dhavan</h3>
+					<img src="img/quote.png" alt="quotes">
+				</div>
+				<p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sapiente consectetur amet ullam eum, et facere perferendis repellendus. Saepe animi ullam nostrum laboriosam accusamus ratione aperiam ipsam, nulla cupiditate totam distinctio dolorem, autem quo perferendis sunt facilis, veniam repudiandae atque nobis architecto voluptates. Minus, corporis totam sapiente vero dolor aperiam repellat minima laudantium in.</p>
+			</li>
+			<li></li>
+		</ul>
+
+	</section>
+
+	<section class="contact">
+		
+		<div id="map"></div>
+		<div class="contact-form">
+			<form action="#">
+				<input type="text" value="Name" onfocus="if(this.value == 'Name') this.value='';" onblur="if(this.value == '') this.value='Name';" name="name">
+				<input type="email" value="Email" onfocus="if(this.value == 'Email') this.value='';" onblur="if(this.value == '') this.value='Email';" name="email">
+				<textarea onfocus="if(this.value == 'Message') this.value='';" onblur="if(this.value == '') this.value='Message';">Message</textarea>
+				<br>
+				<div class="btn-submit">
+					<input type="submit" value="" name="submit">
+				</div>
+			</form>
+		</div>
+
 	</section>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<script>
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 52.712, lng: -1.653},
+				zoom: 12
+			});
+		}
+	</script>
+	<script 
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByRud8xtEsZrieOWqvDT8hr5euATEaxz0&callback=initMap" async defer>
+	</script>
+
 
 </body>
 </html>
