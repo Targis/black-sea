@@ -45,6 +45,22 @@
 					</ul>
 				</nav>
 
+				<div class="mobile-menu-wrapper">
+					<button class="toggle-menu">
+						<span class="sandwich">
+							<span class="s-topper"></span>
+							<span class="s-middle"></span>
+							<span class="s-bottom"></span>
+						</span>
+					</button>
+					<ul class="mobile-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contact me</a></li>
+					</ul>
+				</div>
+				
 			</div>
 
 		</div>
@@ -103,7 +119,9 @@
 
 	<section class="contact">
 		
+		<!-- Google map wrapper -->
 		<div id="map"></div>
+
 		<div class="contact-form">
 			<form action="#">
 				<input type="text" value="Name" onfocus="if(this.value == 'Name') this.value='';" onblur="if(this.value == '') this.value='Name';" name="name">
@@ -131,7 +149,8 @@
 		function initMap() {
 			map = new google.maps.Map(document.getElementById('map'), {
 				center: {lat: 52.712, lng: -1.653},
-				zoom: 12
+				zoom: 12,
+				scrollwheel: false
 			});
 		}
 	</script>
