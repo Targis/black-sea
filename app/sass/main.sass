@@ -185,7 +185,9 @@ section
 
 .things-img
 	display: inline-block
-	margin: 0 60px
+	margin-right: 60px
+	&:last-child
+		margin-right: 0
 
 .reviews
 	background: #00d089
@@ -261,5 +263,16 @@ section
 		background: url('../img/btn-submit.png') 0 0 no-repeat
 		height: 67px
 		width: 66px
+
+.footer
+	background: #00d089
+	color: #fff
+	font: normal 14px/40px HelveticaLTStd-Condensed, Arial, sans-serif
+	height: 40px
+	text-align: center
+	text-transform: uppercase
+	a
+		color: #fff
+
 
 @import "media" // Всегда в конце
